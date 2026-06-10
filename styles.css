@@ -171,8 +171,8 @@ figcaption {
 }
 
 .adherent-container h2,
-h3,
-h4 {
+.adherent-container h3,
+.adherent-container h4 {
     text-wrap: balance;
     text-align: center;
     /* Idéal pour les titres courts sur 2 lignes */
@@ -327,13 +327,14 @@ footer {
     }
 
     .hero-pictures-tablet-desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: block;
         width: 100%;
     }
 
     .hero-pictures-tablet-desktop figure {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
 
     }
 
@@ -445,10 +446,21 @@ footer {
         text-decoration: underline;
     }
 
+    .tarif-mini-tennis,
+    .tarif-jeunes-ados,
+    .tarif-adultes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-wrap: balance;
+        align-items: center;
+    }
+
     .infos-pratiques {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .infos-pratiques-container {
